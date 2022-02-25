@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ConfigProvider } from 'antd';
+import faIR from 'antd/lib/locale/fa_IR';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ConfigProvider locale={faIR} direction='rtl'>
     <App />
-  </React.StrictMode>,
+  </ConfigProvider>,
   document.getElementById('root')
 );
 
